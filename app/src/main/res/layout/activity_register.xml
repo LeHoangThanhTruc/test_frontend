@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Tiêu đề màn hình -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĐĂNG KÝ TÀI KHOẢN"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_marginBottom="32dp" />
+
+    <!-- Container chứa Form Đăng ký dùng RelativeLayout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <!-- Ô nhập Họ tên -->
+        <EditText
+            android:id="@+id/etRegisterName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nhập Họ và tên"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="16dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Ô nhập Email -->
+        <EditText
+            android:id="@+id/etRegisterEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/etRegisterName"
+            android:layout_marginTop="16dp"
+            android:hint="Nhập Email / Gmail"
+            android:inputType="textEmailAddress"
+            android:paddingHorizontal="16dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Ô nhập Mật khẩu -->
+        <EditText
+            android:id="@+id/etRegisterPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/etRegisterEmail"
+            android:layout_marginTop="16dp"
+            android:hint="Nhập Mật khẩu"
+            android:inputType="textPassword"
+            android:paddingHorizontal="16dp"
+            android:background="@android:drawable/editbox_background" />
+
+        <!-- Nút Đăng ký -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/etRegisterPassword"
+            android:layout_marginTop="24dp"
+            android:text="Tạo tài khoản"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <!-- Nút quay lại Đăng nhập -->
+    <Button
+        android:id="@+id/btnGoToLogin"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đã có tài khoản? Đăng nhập"
+        android:textColor="#0066CC"
+        android:textAllCaps="false" />
+
+</LinearLayout>
